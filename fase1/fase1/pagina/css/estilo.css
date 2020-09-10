@@ -1,0 +1,55 @@
+﻿form{
+	border-radius:5px;
+	font-size: 18px;
+	color:#424949;
+	background-color:#48C9B0 ;
+	padding:18px;
+	margin: 0 auto;
+	width: 300px;
+}
+#titulo {   
+    font-size: 36pt;
+    color:#424949;
+    text-align: center;
+}
+#linkR {
+    text-decoration: none;
+    color:#424949;
+}
+#fname{
+	border:0;
+	outline: none;
+	border: solid 1px #ccc;
+	padding:6px;
+	width: 285px; 
+}
+
+#fname:focus{
+	border-color: #0E6655 ;
+	
+}
+
+#bname{
+	
+	border:0;
+	outline: none;
+	border: solid 1px #ccc;
+	padding:12px;
+	width: 295px;
+
+}
+.cform {
+  display: flex;
+  justify-content: center;
+}
+
+.cing{
+  padding: 50px;
+  margin: 50px;
+ 
+  /* IMPORTANTE */
+  display: inline-block;
+}
+body {
+    background-color:#D4EFDF;
+}
