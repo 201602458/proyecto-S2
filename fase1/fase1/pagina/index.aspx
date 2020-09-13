@@ -12,16 +12,16 @@
     <div id="titulo">
         Inicio De Sesion
     </div>
-    <form action="" method="post" >
+    <form id="formulario" action=" " method="post" runat="server">
         
         <label for="fname">Usuario</label><br>
-        <input type="text" id="fname"  value=""><br>
+        <asp:TextBox for="fname" ID="Tusu" runat="server" Height="25px" Width="285px"></asp:TextBox><br>
 
         <label for="fname">Contraseña</label><br>
-        <input type="password" id="fname"  value=""><br>
+        <asp:TextBox for="fname" ID="Tcontra" TextMode="Password" runat="server" Height="23px" Width="285px" /><br>
 		
         <br>	
-		<input type="submit" id="bname" name=" Boton" value="Aceptar">
+            <asp:Button ID="bname" runat="server" Text="Aceptar" OnClick="Button1_Click" />
         <br>	
         <br>	
 	

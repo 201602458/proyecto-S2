@@ -5,16 +5,30 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using biblioteca;
+using System.Data.SqlClient;
 
 namespace fase1.pagina
 {
     public partial class registro : System.Web.UI.Page
     {
+        conexion con = new conexion();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            llenar();
         }
 
+        private void llenar() {
+            string sql = "select * from paises";
+            SqlCommand cm = new SqlCommand(sql, con.getConexion());         
+           // cm.Parameters.AddWithValue("@n", nombre);
+            //SqlDataReader consu = cm.ExecuteReader();
+            Tpais.DataSource = cm.ToString();
+            Tpais.DataTextField = "nombre";
+            Tpais.DataValueField = "id";
+           //pais.DataBind();
+            Tpais.Items.Insert(0,new ListItem("Seleccionar","0"));
+        }
+        
         protected void Button1_Click(object sender, EventArgs e)
         {
             operacion op = new operacion();
@@ -27,7 +41,7 @@ namespace fase1.pagina
             contra2 = Tcontra2.Text;
             fecha_nac = TfechaNac.Text;
             correo = Tcorreo.Text;
-            pais = int.Parse(Tpais.Text);
+            pais = 55;
             if (contra.Equals(contra2))
             {
                 if (op.registrar(nombre, apellido, usu, contra, fecha_nac, correo, pais))
@@ -42,5 +56,7 @@ namespace fase1.pagina
             }
             else { Response.Write("<script>window.alert('Contrasenas no Coinsiden')</script>"); }
         }
+
+       
     }
 }

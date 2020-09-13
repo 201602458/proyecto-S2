@@ -8,10 +8,27 @@
 </head>
     <LINK REL=StyleSheet HREF="css/estilo.css" TYPE="text/css" MEDIA=screen>
 <body>
-    <form id="form1" runat="server">
-    <div>
-    
+
+<form action=" " method="post" runat="server"> 
+    <div id="menu">  
+             
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Jugar</asp:LinkButton></li>
+                <li><a href="">Carga</a></li>
+                <li><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Subir</asp:LinkButton></li>
+                <li class="der"><a href="">Salir</a></li>
+            </ul> 
+              
     </div>
-    </form>
+  
+    <div id="contener">
+        <asp:TextBox ID="Tvista" runat="server" Visible="False" Height="239px" TextMode="MultiLine" Width="239px"></asp:TextBox>
+            <asp:FileUpload ID="Bsubir" runat="server" Visible="False"/>
+            <asp:Button ID="Bup" runat="server" Text="Cargar Archivo" Visible="False" OnClick="Bup_Click" />
+        
+    </div>
+</form>
+
 </body>
 </html>

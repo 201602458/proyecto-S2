@@ -13,6 +13,15 @@ namespace fase1.pagina {
     public partial class registro {
         
         /// <summary>
+        /// formulario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm formulario;
+        
+        /// <summary>
         /// Tnombre control.
         /// </summary>
         /// <remarks>
@@ -73,7 +82,7 @@ namespace fase1.pagina {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Tpais;
+        protected global::System.Web.UI.WebControls.DropDownList Tpais;
         
         /// <summary>
         /// Tcorreo control.
@@ -85,12 +94,12 @@ namespace fase1.pagina {
         protected global::System.Web.UI.WebControls.TextBox Tcorreo;
         
         /// <summary>
-        /// Button1 control.
+        /// bname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button bname;
     }
 }

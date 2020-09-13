@@ -107,14 +107,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="pagina\css\estilo.css" />
+    <Content Include="pagina\imagenes\blanca.png" />
+    <Content Include="pagina\imagenes\fondo.png" />
+    <Content Include="pagina\imagenes\negra.png" />
     <Content Include="pagina\index.aspx" />
     <Content Include="pagina\inicio.aspx" />
+    <Content Include="pagina\juego.aspx" />
     <Content Include="pagina\registro.aspx" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pagina\crear.cs" />
     <Compile Include="pagina\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -128,6 +133,13 @@
     </Compile>
     <Compile Include="pagina\inicio.aspx.designer.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagina\juego.aspx.cs">
+      <DependentUpon>juego.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagina\juego.aspx.designer.cs">
+      <DependentUpon>juego.aspx</DependentUpon>
     </Compile>
     <Compile Include="pagina\registro.aspx.cs">
       <DependentUpon>registro.aspx</DependentUpon>
@@ -143,6 +155,10 @@
       <Project>{6e564a7b-7d66-4e1c-bd63-1a65ed685b5a}</Project>
       <Name>biblioteca</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="guardado\" />
+    <Folder Include="pagina\subido\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

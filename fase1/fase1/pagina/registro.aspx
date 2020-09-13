@@ -12,33 +12,34 @@
     <div id="titulo">
         Registrate
     </div>
-<form action="" method="post" runat="server">
+<form action="" id="formulario" method="post" runat="server">
         <label for="fname">Nombre</label><br>
-        <asp:TextBox ID="Tnombre" runat="server" Height="25px" Width="285px"></asp:TextBox><br>
+        <asp:TextBox ID="Tnombre" for="fname" runat="server" Height="25px" Width="285px"></asp:TextBox><br>
 
         <label for="fname">Apellido</label><br>
-        <asp:TextBox ID="Tapellido" runat="server" Height="25px" Width="285px"></asp:TextBox><br>
+        <asp:TextBox ID="Tapellido" for="fname" runat="server" Height="25px" Width="285px"></asp:TextBox><br>
 
         <label for="fname">Usuario</label><br>
-        <asp:TextBox ID="Tusu" runat="server" Height="25px" Width="285px"></asp:TextBox><br>
+        <asp:TextBox ID="Tusu" for="fname" runat="server" Height="25px" Width="285px"></asp:TextBox><br>
 
         <label for="fname">Contraseña</label><br>
-        <asp:TextBox ID="Tcontra" TextMode="Password" runat="server" Height="23px" Width="285px" /><br>
+        <asp:TextBox ID="Tcontra" for="fname" TextMode="Password" runat="server" Height="23px" Width="285px" /><br>
 		
 		<label for="fname">Confirmar Contraseña</label><br>
-        <asp:TextBox ID="Tcontra2" TextMode="Password" runat="server" Height="23px" Width="285px" /><br>
+        <asp:TextBox ID="Tcontra2" for="fname" TextMode="Password" runat="server" Height="23px" Width="285px" /><br>
 		
         <label for="fname">Fecha de Nacimiento:</label><br>     
-        <asp:TextBox ID="TfechaNac" TextMode="Date" runat="server" Height="25px" Width="281px"></asp:TextBox><br>
+        <asp:TextBox ID="TfechaNac" for="fname" TextMode="Date" runat="server" Height="25px" Width="281px"></asp:TextBox><br>
 
 		<label for="fname">Pais</label><br>
-        <asp:TextBox ID="Tpais" runat="server" Height="25px" Width="285px"></asp:TextBox><br>
+    <asp:DropDownList ID="Tpais" runat="server" Height="38px" Width="292px"></asp:DropDownList>
+        <br>
 
 		<label for="fcorreo">Correo</label><br>
-        <asp:TextBox ID="Tcorreo" textMode="Email" runat="server" Height="25px" Width="285px"></asp:TextBox><br>
+        <asp:TextBox ID="Tcorreo" for="fname" textMode="Email" runat="server" Height="25px" Width="285px"></asp:TextBox><br>
 		
         <br>	
-    <asp:Button ID="Button1" runat="server" Text="Guardar" OnClick="Button1_Click" />
+    <asp:Button ID="bname"  runat="server" Text="Guardar" OnClick="Button1_Click" />
 	
 		
 		
